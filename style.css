@@ -1,0 +1,182 @@
+/*-----------------*/
+/*--- Abdi Adem ---*/
+/*-----------------*/
+
+/*---------------*/
+/*--- general ---*/
+/*---------------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	z-index: 1000;
+}
+
+body {
+	background-color: #005496;
+	position: relative;
+}
+
+.separator,
+.separator-2 {
+	position: relative;
+	width: 100%;
+	border-bottom: 2px dashed #999;
+}
+
+.separator:after,
+.separator-2:after {
+	content: '';
+	position: absolute;
+	width: 1em;
+	height: 1.6em;
+	background-color: #005496;
+	right: -1em;
+	top: -0.8em;
+	border-radius: 1.6em 0 0 1.6em;
+}
+
+.separator:before,
+.separator-2:before {
+	content: '';
+	position: absolute;
+	width: 1em;
+	height: 1.6em;
+	background-color: #005496;
+	left: -1em;
+	top: -0.8em;
+	border-radius: 0 1.6em 1.6em 0;
+}
+
+div > h3 {
+	margin-bottom: 1.2em;
+	text-align: center;
+}
+
+.title {
+	margin: 0.2em 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #FFF;
+	padding: 1.4em;
+	text-align: center;
+
+}
+
+.title p {
+	font-size: 1.6em;
+	/*margin-bottom: 1.6em;*/
+}
+
+
+/*--------------*/
+/*--- navbar ---*/
+/*--------------*/
+.navbar {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #FFF;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	text-align: center;
+}
+
+.navbar .brand img {
+	width: 6em;
+	border-radius: 0.6em;
+	margin-bottom: 0.8em;
+}
+
+.navbar .brand p {
+	font-size: 1.8em; 
+}
+
+.navbar .brand p.small {
+	font-size: 1.2em; 
+}
+
+/*------------*/
+/*--- form ---*/
+/*------------*/
+.form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFF;
+	border-radius: 0.6em;
+	padding: 0.8em;
+	min-width: 19em;
+	max-width: 24em;
+	margin: 2.8em auto;
+	box-shadow: 0 0 1.8em rgba(0, 0, 0, 0.1);
+}
+
+.form form {
+	width: 100%;
+}
+
+.form p {
+	text-align: center;
+	margin: 0.8em 0;
+}
+
+.form {
+	width: 100%;
+
+}
+
+.form .field-group {
+	margin-bottom: 1.2em;
+
+}
+
+.form .field-group input,
+.form .field-group select {
+	padding: 0.6em 0.4em;
+	width: 100%;
+	outline: none;
+	border: 0.1em solid #888;
+	border-radius: 0.2em;
+}
+
+.form .btn {
+	width: 100%;
+	background-color: #0078D7;
+	border: none;
+	border-radius: 0.2em;
+	padding: 0.8em;
+	margin: 1.2em 0; 
+	color: #FFF;
+	cursor: pointer;
+}
+
+.bill-to {
+	margin-bottom: 2em;
+}
+
+.card {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.total {
+	margin-top: 2em;
+}
+
+.form-group {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-group div:nth-of-type(1) {
+	width: 25%;
+}
+
+.form-group div:nth-of-type(2) {
+	width: 70%;
+}
